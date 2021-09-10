@@ -16,7 +16,7 @@ export default class Contenido extends React.Component {
   }
 
 
-  componentDidUpdate(prevProps,prevState) {
+  componentDidUpdate(prevState) {
     if (prevState.contador !== this.state.contador) {
       elegidos.push(this.state.selectPrev);
     }
